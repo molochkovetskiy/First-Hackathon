@@ -1,1 +1,149 @@
-testtest
+/* body */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --menu-color: black;
+  }
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("./media/welcome-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header */
+header{
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--menu-color);
+    border-left: 0px;
+    margin: 2vh auto 0 auto;
+    height: 6vh;
+    width: 35%;
+}
+
+#search{
+    width: 20%;
+    height: 4vh;
+    margin: 0 50px;
+    background-color: grey;
+    justify-self: center;
+    align-self: center;
+}
+
+#search::placeholder{
+    color: white; 
+    font-size: 20px;
+}
+
+#header-buttons{
+    display: flex;
+}
+
+.header-button{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 0 1vw;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--menu-color);
+    color: wvar(--menu-color)hite;
+    font-weight: bold;
+}
+
+/* welcome*/
+
+#welcome-box{
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center ;
+}
+
+.welcome-text{
+    width: 300px;
+    height: 200px;
+    background-color: rgba(59,55,54,0.7);
+    color: azure;
+    }
+/* article */
+#activities{
+    margin: 6vh auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    align-items: center;
+}
+
+.activity-box-small{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.activity-box-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.activity-box-pic{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    object-fit: cover;
+}
+
+.activity-box-header-text{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.activity-name, .activity-region{
+    width: 100%;
+}
+
+.activity-short-description{
+    width: 80%;
+    margin: 5px auto;
+}
+
+.activity-read-more-button{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin: 0 2vw;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    align-self: flex-end;
+    margin: auto 20px 20px 20px;
+}
