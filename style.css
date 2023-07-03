@@ -1,4 +1,7 @@
-/* body */
+/* main */
+html{
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -25,8 +28,8 @@ header{
 }
 
 .header-logo{
-    width: 6vh;
-    height: 6vh;
+    width: 8vh;
+    height: 8vh;
     margin-left: 50px;
     position: relative;
     top: 5vh;
@@ -63,13 +66,14 @@ header{
     display: flex;
     width: 100px;
     height: 40px;
+    background-color: rgba(59,55,54,0.7);
     border-radius: 25px;
+    border: 2px solid var(--menu-color);
+    font-weight: bold;
     margin: 0 1vw;
     justify-content: center;
     align-items: center;
-    border: 2px solid var(--menu-color);
     color: var(--menu-color);
-    font-weight: bold;
 }
 
 /* welcome*/
@@ -81,8 +85,6 @@ header{
     left: 0;
     width: 100vw;
     height: calc(100vh - 16vh);
-    /* align-items: center; */
-    /* justify-content: center ; */
 }
 
 .welcome-text{
@@ -94,6 +96,33 @@ header{
     font-size: 20px;
     margin: 15vh 0 0 10vw;
     }
+
+#welcome-description{
+    margin-top: 2vh;
+}
+
+#button-to-activities{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(28, 27, 26, 0.7);
+    /* border-radius: 50px; */
+    border: 2px solid var(--menu-color);
+    font-weight: bold;
+    margin: 5vw 1vw 0 1vw;
+    justify-content: center;
+    align-items: center;
+    color: var(--menu-color);
+}
+
+.href-button{
+    text-decoration: none;
+}
+
+#button-to-activities:hover{
+    background-color: rgb(59, 55, 54);
+}
+
 /* article */
 #activities{
     margin: 6vh auto 0;
@@ -111,8 +140,17 @@ header{
     width: 400px;
     height: 250px;
     margin: 30px;
-    border: 1px solid black;
-    border-radius: 10%;
+    /* border: 1px solid black; */
+    /* border-radius: 10%; */
+    background-image: url("./media/beach_volley.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.background-shadow{
+    background-color: rgb(59, 55, 54, 0.5);
+
 }
 
 .activity-box-header{
