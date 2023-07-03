@@ -4,14 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --menu-color: black;
+    --menu-color: white;
   }
 
 body{
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url("./media/welcome-img.jpeg");
+    background-image: url("./media/friends1.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -20,26 +21,33 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 10vh;
 }
 
-.header-buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 3px solid var(--menu-color);
-    border-left: 0px;
-    margin: 2vh auto 0 auto;
+.header-logo{
+    width: 6vh;
     height: 6vh;
-    width: 35%;
+    margin-left: 50px;
+    position: relative;
+    top: 5vh;
 }
 
-#search{
+/* #search{
     width: 20%;
     height: 4vh;
     margin: 0 50px;
     background-color: grey;
     justify-self: center;
     align-self: center;
+} */
+
+.header-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2vh;
+    height: 6vh;
+    width: 35%;
 }
 
 #search::placeholder{
@@ -60,7 +68,7 @@ header{
     justify-content: center;
     align-items: center;
     border: 2px solid var(--menu-color);
-    color: wvar(--menu-color)hite;
+    color: var(--menu-color);
     font-weight: bold;
 }
 
@@ -72,16 +80,19 @@ header{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
-    align-items: center;
-    justify-content: center ;
+    height: calc(100vh - 16vh);
+    /* align-items: center; */
+    /* justify-content: center ; */
 }
 
 .welcome-text{
     width: 300px;
     height: 200px;
-    background-color: rgba(59,55,54,0.7);
+    /* background-color: rgba(59,55,54,0.7); */
     color: azure;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15vh 0 0 10vw;
     }
 /* article */
 #activities{
@@ -89,7 +100,8 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 95%;
+    width: 100%;
+    background-color: aliceblue;
     align-items: center;
 }
 
