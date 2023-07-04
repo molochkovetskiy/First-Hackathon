@@ -134,19 +134,40 @@ header{
     min-width: 350px;
     width: 33%;
     height: 250px;
-    background-image: url("./media/beach_volley.jpg");
+    /* background-image: url("./media/beach_volley.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     border: 1px solid white;
     flex-grow: 2;
     z-index: 10;
+    background-position: center;
 }
+
+#activity_1{
+    background-image: url("./images/activity_1.jpg");
+}
+#activity_2{
+    background-image: url("./images/activity_2.jpg");
+}
+#activity_3{
+    background-image: url("./images/activity_3.webp");
+}
+#activity_4{
+    background-image: url("./images/activity_4.webp");
+}
+#activity_5{
+    background-image: url("./images/activity_5.webp");
+}
+#activity_6{
+    background-image: url("./images/activity_6.jpg");
+}
+
 
 .background-shadow{
     width: 100%;
     height: 100%;
-    background-color: rgb(59, 55, 54, 0.7);
+    background-color: rgb(59, 55, 54, 0.8);
 
     &:hover{
         background-color: rgba(0, 0, 0, 0.8);
