@@ -1,0 +1,143 @@
+body {
+    background-image: url("images/background_image.jpg");
+    background-size: cover;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #222121;
+    line-height: 1.5em;
+}
+
+div {
+    display: block;
+}
+
+li {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul, nav ol, ul, li {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    margin-bottom: 1px;
+}
+
+.main-content .wrap {
+    padding: 0 50px;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-content .content {
+    width: 100%;
+    padding: 34px 60px;
+    background: #fff;
+    float: left;
+}
+
+.main-content .sidebar-right {
+    width: 20%;
+    margin-left: 3.5%;
+    float: right;
+    /* position: sticky; */
+}
+
+.side-navigation {
+    margin-top: -4px;
+}
+
+.side-navigation li {
+    border-bottom: 1px solid #ecebeb;
+}
+
+.main-content .center {
+    width: 74%;
+    float: left;
+}
+
+.article.article-content-page {
+    padding-bottom: 45px;
+    border-bottom: 1px solid #d2d0d0;
+}
+
+.article .article-info {
+    margin-bottom: 48px;
+}
+
+.article .article-info .date-published {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    padding-top: 10px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.article .article-info .article-title {
+    font-weight: 400;
+    color: #dc5726;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.event-photos {
+    margin-top: 95px;
+}
+
+.event-photos h4 {
+    font-weight: 400;
+    color: #436289;
+    margin-bottom: 1.4em;
+}
+
+.blue-button {
+    width: 100%;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    color: #436289;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 20px;
+    border: 2px solid #8ca3c1;
+    outline: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.news-navigation {
+    padding: 42px 105px 12px 52px;
+    text-align: center;
+}
+
+
+.news-navigation a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #dc5726;
+    line-height: 1;
+    text-transform: lowercase;
+}
+
+.news-navigation a.previous-news {
+    float: left;
+}
+
+.news-navigation a.next-news {
+    float: right;
+}
