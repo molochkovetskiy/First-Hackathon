@@ -35,15 +35,6 @@ header{
     top: 5vh;
 }
 
-/* #search{
-    width: 20%;
-    height: 4vh;
-    margin: 0 50px;
-    background-color: grey;
-    justify-self: center;
-    align-self: center;
-} */
-
 .header-buttons{
     display: flex;
     justify-content: flex-end;
@@ -58,14 +49,11 @@ header{
     font-size: 20px;
 }
 
-#header-buttons{
-    display: flex;
-}
-
 .header-button{
     display: flex;
     width: 100px;
     height: 40px;
+    text-decoration: none;
     background-color: rgba(59,55,54,0.7);
     border-radius: 25px;
     border: 2px solid var(--menu-color);

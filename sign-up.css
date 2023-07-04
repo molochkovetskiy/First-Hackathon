@@ -1,0 +1,136 @@
+/* main */
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --text-color: white;
+  }
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("./media/friends2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* header */
+header{
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.header-logo{
+    width: 8vh;
+    height: 8vh;
+    margin-left: 50px;
+    position: relative;
+    top: 5vh;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2vh;
+    height: 6vh;
+    width: 35%;
+}
+
+#header-buttons{
+    display: flex;
+}
+
+.header-button{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: rgba(59,55,54,0.7);
+    border-radius: 25px;
+    border: 2px solid var(--text-color);
+    font-weight: bold;
+    margin: 0 1vw;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* article */
+#article{
+    width: 100vw;
+    height: calc(100vh - 10vh);
+    color: white;
+}
+
+.sign-in-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(59, 55, 54, 0.8);
+    backdrop-filter: blur(10px);
+
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+}
+
+.sign-in-header{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.form{
+    margin-top: 20px;
+}
+label{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(156, 156, 156, 0.1);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+::placeholder{
+    color: #e5e5e5;
+}
+
+#submit-button{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
