@@ -1,11 +1,18 @@
 body {
-    background-image: url("images/background_image.jpg");
+    background-image: url("./media/friends1.webp");
     background-size: cover;
-    font-family: "Roboto",sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: #222121;
     line-height: 1.5em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --menu-color: white;
 }
 
 div {
@@ -19,11 +26,75 @@ li {
     padding: 0;
 }
 
-nav ul, nav ol, ul, li {
+nav ul,
+nav ol,
+ul,
+li {
     list-style: none;
     list-style-image: none;
     margin: 0;
     padding: 0;
+}
+
+.region-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0 0 0;
+}
+
+.location-icon{
+    width: 20px;
+    height: 20px;
+
+}
+
+/* header */
+header {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.header-logo {
+    width: 8vh;
+    height: 8vh;
+    margin-left: 50px;
+    position: relative;
+    top: 5vh;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2vh;
+    height: 6vh;
+    width: 35%;
+}
+
+#header-buttons {
+    display: flex;
+}
+
+.header-button {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    background-color: rgba(59, 55, 54, 0.7);
+    border-radius: 25px;
+    border: 2px solid var(--menu-color);
+    font-weight: bold;
+    margin: 0 1vw;
+    justify-content: center;
+    align-items: center;
+    color: var(--menu-color);
+}
+
+.href-button {
+    text-decoration: none;
 }
 
 .main-content {
@@ -31,7 +102,7 @@ nav ul, nav ol, ul, li {
 }
 
 .main-content .wrap {
-    padding: 0 50px;
+    padding: 40px 50px;
 }
 
 .wrap {
@@ -51,7 +122,6 @@ nav ul, nav ol, ul, li {
     width: 20%;
     margin-left: 3.5%;
     float: right;
-    /* position: sticky; */
 }
 
 .side-navigation {
