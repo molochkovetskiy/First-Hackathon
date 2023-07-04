@@ -1,0 +1,229 @@
+/* main */
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --menu-color: white;
+  }
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("./media/friends1.webp");
+    filter: brightness(10%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* header */
+header{
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.header-logo{
+    width: 8vh;
+    height: 8vh;
+    margin-left: 50px;
+    position: relative;
+    top: 5vh;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2vh;
+    height: 6vh;
+    width: 35%;
+}
+
+#search::placeholder{
+    color: white; 
+    font-size: 20px;
+}
+
+.header-button{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    background-color: rgba(59,55,54,0.7);
+    border-radius: 25px;
+    border: 2px solid var(--menu-color);
+    font-weight: bold;
+    margin: 0 1vw;
+    justify-content: center;
+    align-items: center;
+    color: var(--menu-color);
+}
+
+
+
+
+/* article */
+
+
+#activities{
+    position: relative;
+    margin: 6vh auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    background-color: aliceblue;
+    align-items: center;
+    height: auto;
+    z-index: 50;
+}
+
+.activity-box-small{
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    width: 33%;
+    height: 250px;
+    /* background-image: url("./media/beach_volley.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border: 1px solid white;
+    flex-grow: 2;
+    z-index: 10;
+    background-position: center;
+}
+
+#activity_1{
+    background-image: url("./images/activity_1.jpg");
+}
+#activity_2{
+    background-image: url("./images/activity_2.jpg");
+}
+#activity_3{
+    background-image: url("./images/activity_3.webp");
+}
+#activity_4{
+    background-image: url("./images/activity_4.webp");
+}
+#activity_5{
+    background-image: url("./images/activity_5.webp");
+}
+#activity_6{
+    background-image: url("./images/activity_6.jpg");
+}
+
+
+.background-shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(59, 55, 54, 0.8);
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.8);
+        transition-duration: 0.5s;
+    }
+}
+
+.activity-box-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.activity-box-pic{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 90%;
+    object-fit: cover;
+}
+
+.activity-box-header-text{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.region-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0 0 0;
+}
+
+.location-icon{
+    width: 20px;
+    height: 20px;
+
+}
+
+.activity-name, .activity-region{
+    width: 100%;
+}
+
+.activity-name{
+    font-size: 25px;
+}
+
+.activity-short-description{
+    width: 80%;
+    margin: 5px auto;
+}
+
+.activity-read-more-button{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin: 0 2vw;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    align-self: flex-end;
+    margin: auto 20px 0 20px;
+}
+
+/* button */
+
+.add-activity-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    border: 3px solid #27ae60;
+    background: #2ecc71;
+    text-decoration: none;
+    color: #27ae60;
+    transition: all .2s;
+    position: absolute;
+    
+    bottom: 15px;
+	right: 30px;
+    z-index: 10;
+
+    &:hover {
+      box-shadow: 0px 0 0 0 #1f1f1f,  0px 0 0 10px #27ae60;
+    }
+ 
+    &:active {
+      box-shadow: 0px 0 0 11px #FFF, 0px 0 0 10px #27ae60;
+    }
+  }
+
+  .add-icon{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
