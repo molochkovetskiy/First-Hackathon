@@ -68,6 +68,21 @@ header{
     }
 }
 
+.create-btn {
+    display: flex;
+    width: 170px;
+    height: 40px;
+    background-color: #dc5726;
+    border-radius: 25px;
+    border: 2px solid #dc5726;
+    font-weight: bold;
+    margin: 0 1vw;
+    justify-content: center;
+    align-items: center;
+    color: var(--menu-color);
+    text-decoration: none;
+}
+
 /* welcome*/
 
 #welcome-box{

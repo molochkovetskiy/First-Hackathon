@@ -157,3 +157,13 @@ input {
     color: var(--text-color);
     text-decoration: none;
 }
+
+    /* Footer */
+
+    .copyright{
+        font-size: 2vh;
+        text-align: center;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+    }
