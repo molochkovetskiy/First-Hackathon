@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="search.css">
     <title>4All search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -22,119 +23,259 @@
     <article id="article">
         <section id="search-box">
             <input id="search" type="text" placeholder="  Search...">
-            <div id="search-button"></div>
+            <button type="submit" class="search-button" ><i class="fa fa-search"></i></button>
         </section>
         <div id="search-results">
-            <section id="filter"></section>
+
+            <section id="filter">
+                <article class="filter-group-item">
+                    <div class="filter-header">
+                        <h6 class="filter-title">Part of the country </h6>
+                    </div>
+                    <div class="filter-content">
+                        <div class="filter-body">
+                        <form class="filter-elements-box">
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                North
+                              </span>
+                            </label> <!-- form-check.// -->
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                Center
+                              </span>
+                            </label>  <!-- form-check.// -->
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                Jerisalem
+                              </span>
+                            </label>  <!-- form-check.// -->
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                South
+                              </span>
+                            </label>  <!-- form-check.// -->
+                        </form>
+            
+                        </div> <!-- filter-body.// -->
+                    </div>
+                </article> 
+                <article class="filter-group-item">
+                    <div class="filter-header">
+                        <h6 class="filter-title">Activity type </h6>
+                    </div>
+                    <div class="filter-content">
+                        <div class="filter-body">
+                        <form class="filter-elements-box">
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                Music
+                              </span>
+                            </label>
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                Sports
+                              </span>
+                            </label> 
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                Games
+                              </span>
+                            </label>
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                Education
+                              </span>
+                            </label> 
+                        </form>
+            
+                        </div>
+                    </div>
+                </article>
+                <article class="filter-group-item">
+                    <div class="filter-header">
+                        <h6 class="filter-title">Participation type</h6>
+                    </div>
+                    <div class="filter-content">
+                        <div class="filter-body">
+                        <form class="filter-elements-box">
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                Show
+                              </span>
+                            </label>
+                            <label class="form-check">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span class="form-check-label">
+                                Do something together
+                              </span>
+                            </label>
+                        </form>
+            
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="filter-group-item">
+                    <div class="filter-header">
+                        <h6 class="title"> Visited</h6>
+                    </div>
+                    <div class="filter-content">
+                        <div class="filter-body">
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                          <span class="form-check-label">
+                            All
+                          </span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                          <span class="form-check-label">
+                            Already visited
+                          </span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadio" value="">
+                          <span class="form-check-label">
+                            New
+                          </span>
+                        </label>
+                        </div> 
+                    </div>
+                </article>
+            </section>
+
+
+
             <section id="activities">
-                <div class="activity-box-search" id="activity_1">
-                    <div class="activity-picture"></div>
-                    <div class="activity-text-box">
-                        <div class="activity-box-header">
-                            <div class="activity-box-header-text">
-                                <h3 class="activity-name">Rock BaSalon</h3>
-                                <div class="region-box">
-                                    <img class="location-icon" src="./media/location-logo.png" alt="location logo">
-                                    <h5 class="activity-region">Tel-Aviv</h5>
+                <a class="activity-link" href="./activity_1.html">
+                    <div class="activity-box-search" id="activity_1">
+                        <div class="activity-picture"></div>
+                        <div class="activity-text-box">
+                            <div class="activity-box-header">
+                                <div class="activity-box-header-text">
+                                    <h3 class="activity-name">Rock BaSalon</h3>
+                                    <div class="region-box">
+                                        <img class="location-icon" src="./media/location-logo.png" alt="location logo">
+                                        <h5 class="activity-region">Tel-Aviv</h5>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="activity-short-description">During our meetings it is never quiet :) Come to us if you
+                            are also a fan of good music. If you know how to play any musical instrument...</div>
                         </div>
-                        <div class="activity-short-description">During our meetings it is never quiet :) Come to us if you
-                        are also a fan of good music. If you know how to play any musical instrument...</div>
-                        <a href="./activity_1.html" class="activity-read-more-button"><p>Read more</p></a>
                     </div>
-                </div>
-                <div class="activity-box-search" id="activity_2">
-                    <div class="activity-picture"></div>
-                    <div class="activity-text-box">
-                        <div class="activity-box-header">
-                            <div class="activity-box-header-text">
-                                <h3 class="activity-name">Lifehack this country</h3>
-                                <div class="region-box">
-                                    <img class="location-icon" src="./media/location-logo.png" alt="location logo">
-                                    <h5 class="activity-region">Center</h5>
+                </a>
+                <a class="activity-link" href="./activity_2.html">
+                    <div class="activity-box-search" id="activity_2">
+                        <div class="activity-picture"></div>
+                        <div class="activity-text-box">
+                            <div class="activity-box-header">
+                                <div class="activity-box-header-text">
+                                    <h3 class="activity-name">Lifehack this country</h3>
+                                    <div class="region-box">
+                                        <img class="location-icon" src="./media/location-logo.png" alt="location logo">
+                                        <h5 class="activity-region">Center</h5>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="activity-short-description">Did you expect the repatriation to be easier? Faced with
+                            difficulties? Don't understand
+                            where to go and what to say? We have a solution!...</div>
+                            <!-- <a href="./activity_2.html" class="activity-read-more-button"><p>Read more</p></a> -->
                         </div>
-                        <div class="activity-short-description">Did you expect the repatriation to be easier? Faced with
-                        difficulties? Don't understand
-                        where to go and what to say? We have a solution!...</div>
-                        <a href="./activity_2.html" class="activity-read-more-button"><p>Read more</p></a>
                     </div>
-                </div>
-                <div class="activity-box-search"  id="activity_3">
-                    <div class="activity-picture"></div>
-                    <div class="activity-text-box">
-                        <div class="activity-box-header">
-                            <div class="activity-box-header-text">
-                                <h3 class="activity-name">Southern Tennis</h3>
-                                <div class="region-box">
-                                    <img class="location-icon" src="./media/location-logo.png" alt="location logo">
-                                    <h5 class="activity-region">Ashdod</h5>
+                </a>    
+                <a class="activity-link" href="./activity_3.html">
+                    <div class="activity-box-search"  id="activity_3">
+                        <div class="activity-picture"></div>
+                        <div class="activity-text-box">
+                            <div class="activity-box-header">
+                                <div class="activity-box-header-text">
+                                    <h3 class="activity-name">Southern Tennis</h3>
+                                    <div class="region-box">
+                                        <img class="location-icon" src="./media/location-logo.png" alt="location logo">
+                                        <h5 class="activity-region">Ashdod</h5>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="activity-short-description">Whether you are a professional, an amateur or even a
+                            beginner, you will always be welcome
+                            in our club.
+                            We play tennis every...</div>
+                            <!-- <a href="./activity_3.html" class="activity-read-more-button"><p>Read more</p></a> -->
                         </div>
-                        <div class="activity-short-description">Whether you are a professional, an amateur or even a
-                        beginner, you will always be welcome
-                        in our club.
-                        We play tennis every...</div>
-                        <a href="./activity_3.html" class="activity-read-more-button"><p>Read more</p></a>
                     </div>
-                </div>
-                <div class="activity-box-search"  id="activity_4">
-                    <div class="activity-picture"></div>
-                    <div class="activity-text-box">
-                        <div class="activity-box-header">
-                            <div class="activity-box-header-text">
-                                <h3 class="activity-name">Painting together</h3>
-                                <div class="region-box">
-                                    <img class="location-icon" src="./media/location-logo.png" alt="location logo">
-                                    <h5 class="activity-region">Raanana</h5>
+                </a>
+                <a class="activity-link" href="./activity_2.html">
+                    <div class="activity-box-search"  id="activity_4">
+                        <div class="activity-picture"></div>
+                        <div class="activity-text-box">
+                            <div class="activity-box-header">
+                                <div class="activity-box-header-text">
+                                    <h3 class="activity-name">Painting together</h3>
+                                    <div class="region-box">
+                                        <img class="location-icon" src="./media/location-logo.png" alt="location logo">
+                                        <h5 class="activity-region">Raanana</h5>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="activity-short-description">We draw, we discuss, we go to museums. All about paintings
+                            and creativity. Every week we
+                            hold a master class...</div>
+                            <!-- <a href="./activity_4.html" class="activity-read-more-button"><p>Read more</p></a> -->
                         </div>
-                        <div class="activity-short-description">We draw, we discuss, we go to museums. All about paintings
-                        and creativity. Every week we
-                        hold a master class...</div>
-                        <a href="./activity_4.html" class="activity-read-more-button"><p>Read more</p></a>
                     </div>
-                </div>
-                <div class="activity-box-search"  id="activity_5">
-                    <div class="activity-picture"></div>
-                    <div class="activity-text-box">
-                        <div class="activity-box-header">
-                            <div class="activity-box-header-text">
-                                <h3 class="activity-name">Game with us</h3>
-                                <div class="region-box">
-                                    <img class="location-icon" src="./media/location-logo.png" alt="location logo">
-                                    <h5 class="activity-region">North</h5>
+                </a>
+                <a class="activity-link" href="./activity_2.html">
+                    <div class="activity-box-search"  id="activity_5">
+                        <div class="activity-picture"></div>
+                        <div class="activity-text-box">
+                            <div class="activity-box-header">
+                                <div class="activity-box-header-text">
+                                    <h3 class="activity-name">Game with us</h3>
+                                    <div class="region-box">
+                                        <img class="location-icon" src="./media/location-logo.png" alt="location logo">
+                                        <h5 class="activity-region">North</h5>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="activity-short-description">Games, games, games. If you're a fan like us, then you just
+                            have to come and demonstrate
+                            your skills. Tournaments on various games, discussion of new products, snacks and more...</div>
+                            <!-- <a href="./activity_5.html" class="activity-read-more-button"><p>Read more</p></a> -->
                         </div>
-                        <div class="activity-short-description">Games, games, games. If you're a fan like us, then you just
-                        have to come and demonstrate
-                        your skills. Tournaments on various games, discussion of new products, snacks and more...</div>
-                        <a href="./activity_5.html" class="activity-read-more-button"><p>Read more</p></a>
                     </div>
-                </div>
-                <div class="activity-box-search"  id="activity_6">
-                    <div class="activity-picture"></div>
-                    <div class="activity-text-box">
-                        <div class="activity-box-header">
-                            <div class="activity-box-header-text">
-                                <h3 class="activity-name">Beach Volleyball</h3>
-                                <div class="region-box">
-                                    <img class="location-icon" src="./media/location-logo.png" alt="location logo">
-                                    <h5 class="activity-region">North</h5>
+                </a>
+                <a class="activity-link" href="./activity_2.html">
+                    <div class="activity-box-search"  id="activity_6">
+                        <div class="activity-picture"></div>
+                        <div class="activity-text-box">
+                            <div class="activity-box-header">
+                                <div class="activity-box-header-text">
+                                    <h3 class="activity-name">Beach Volleyball</h3>
+                                    <div class="region-box">
+                                        <img class="location-icon" src="./media/location-logo.png" alt="location logo">
+                                        <h5 class="activity-region">North</h5>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="activity-short-description">For those who love the sun, sports and sand in their teeth, hahaha.
+                            We gather every weekend to play
+                            beach volleyball with a wonderful view of the sea...</div>
+                            <!-- <a href="./activity_6.html" class="activity-read-more-button"><p>Read more</p></a> -->
                         </div>
-                        <div class="activity-short-description">For those who love the sun, sports and sand in their teeth, hahaha.
-                        We gather every weekend to play
-                        beach volleyball with a wonderful view of the sea...</div>
-                        <a href="./activity_6.html" class="activity-read-more-button"><p>Read more</p></a>
                     </div>
-                </div>
+                </a>
                 <a href="#" class="add-activity-button">
                     <p class="add-icon">+</p>
                     </a>
