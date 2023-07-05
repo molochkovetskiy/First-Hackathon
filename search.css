@@ -39,8 +39,6 @@ header a{
     width: 8vh;
     height: 8vh;
     margin-left: 50px;
-    /* position: relative;
-    top: 5vh; */
 }
 
 #site-header{
@@ -214,7 +212,7 @@ header a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    min-width: 350px;
+    /* min-width: 350px; */
     width: 95%;
     height: 150px;
     color: #000;
@@ -224,10 +222,14 @@ header a{
     background-color: white;
     flex-grow: 2;
     background-position: center;
-
+    &:last-child{
+        margin-bottom: 30px;;
+    }
 }
 
 .activity-box-search{
+    width: max-content;
+
     &:hover{
         background-color: rgb(223, 223, 223);
     }
@@ -235,9 +237,11 @@ header a{
 }
 
 .activity-picture{
-    height: 140px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
     background-size: cover;
+    margin: auto 0 auto 20px;
 }
 
 #activity_1 .activity-picture{
@@ -262,9 +266,11 @@ header a{
 .activity-box-header{
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
 }
 
 .activity-text-box{
+    flex: 1;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -310,7 +316,7 @@ header a{
 
 .activity-short-description{
     width: 80%;
-    margin: 5px auto;
+    margin: 5px auto 5px;
     justify-content: center;
 }
 
