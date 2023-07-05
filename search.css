@@ -171,7 +171,7 @@ header{
 
 #activities{
     position: relative;
-    margin: 0 auto 0;
+    margin: 0 auto 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -341,3 +341,13 @@ header{
     color: white;
     margin: 0;
   }
+
+    /* Footer */
+
+.copyright{
+    font-size: 2vh;
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
