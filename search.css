@@ -12,11 +12,11 @@ html{
 
 body{
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url("./media/friends1.webp");
-    /* filter: brightness(10%); */
+    background:  linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("./media/friends1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    background-attachment: fixed;
 }
 
 /* header */
@@ -65,16 +65,13 @@ header{
     color: var(--menu-color);
 }
 
-
-
-
 /* article */
 
 #article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh 0 0 0;
+    margin: 20px 0 0 0;
     position: relative;
 }
 
@@ -83,18 +80,30 @@ header{
     margin: 10px 0 10px 30%;
 }
 
+#search{
+    width: 500px;
+    height: 50px;
+}
+
+#search-button{
+
+}
+
 #search-results{
     display: flex;
     flex-direction: row;
-    width: 80%;
-    background-color: white;
+    width: 100%;
+    /* background-color: white; */
+    position: relative;
 }
 
 #filter{
-    width: 30%;
-    position: sticky;
-    left: -10px;
-    background-color: #27ae60;
+    width: min(230px, 30%);
+    min-width: 150px;
+    height: 500px;
+    position: fixed;
+    /* left: -10px; */
+    background-color: white;
     z-index: 999;
 }
 
@@ -104,11 +113,10 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 70%;
+    width: 60%;
     background-color: aliceblue;
     align-items: center;
     height: auto;
-    /* z-index: 50; */
 }
 
 .activity-box-search{
@@ -131,8 +139,8 @@ header{
     background-position: center;
 }
 .activity-picture{
-    height: 100%;
-    width: 240px;
+    height: 140px;
+    width: 140px;
     background-size: cover;
 }
 
@@ -173,7 +181,7 @@ header{
 }
 
 .activity-box-header-text{
-    margin: 10px;
+    margin: 0 0 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,7 +192,7 @@ header{
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin: 10px 0 0 0;
+    margin: 0;
 }
 
 .location-icon{
@@ -218,6 +226,12 @@ header{
     color: black;
     align-self: flex-end;
     margin: auto 20px 0 20px;
+}
+
+@media screen and (max-width: 1250px) {
+    #activities{
+        margin: 0 0 0 auto;
+    }    
 }
 
 /* button */
