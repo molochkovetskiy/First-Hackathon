@@ -176,7 +176,7 @@ header{
 }
 
 
-
+/* activities */
 
 #activities{
     position: relative;
@@ -212,7 +212,7 @@ header{
 
 .activity-box-search{
     &:hover{
-        background-color: beige;
+        background-color: rgb(223, 223, 223);
     }
     
 }
@@ -280,7 +280,7 @@ header{
 .location-icon{
     width: 20px;
     height: 20px;
-
+    margin: 0 2px 0 0;
 }
 
 .activity-name, .activity-region{
