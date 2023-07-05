@@ -20,6 +20,7 @@ body{
 
 /* header */
 header{
+
     justify-self: center;
     display: flex;
     align-items: center;
@@ -27,12 +28,23 @@ header{
     height: 10vh;
 }
 
+header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .header-logo{
     width: 8vh;
     height: 8vh;
     margin-left: 50px;
-    position: relative;
-    top: 5vh;
+    /* position: relative;
+    top: 5vh; */
+}
+
+#site-header{
+    color: #fff;
+    margin-left: 10px;
 }
 
 .header-buttons{

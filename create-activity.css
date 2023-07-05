@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url("./media/friends2.jpg");
+    background:  linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("./media/friends2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -21,7 +21,7 @@ body {
 }
 
 /* header */
-header {
+header{
     justify-self: center;
     display: flex;
     align-items: center;
@@ -29,12 +29,24 @@ header {
     height: 10vh;
 }
 
-.header-logo {
+
+header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-logo{
     width: 8vh;
     height: 8vh;
     margin-left: 50px;
-    position: relative;
-    top: 5vh;
+    /* position: relative;
+    top: 5vh; */
+}
+
+#site-header{
+    color: #fff;
+    margin-left: 10px;
 }
 
 .header-buttons {
