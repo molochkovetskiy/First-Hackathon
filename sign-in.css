@@ -1,5 +1,5 @@
 /* main */
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -8,9 +8,9 @@ html{
     padding: 0;
     box-sizing: border-box;
     --text-color: white;
-  }
+}
 
-body{
+body {
     font-family: 'Josefin Sans', sans-serif;
     background-image: url("./media/friends2.jpg");
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ body{
 }
 
 /* header */
-header{
+header {
     justify-self: center;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ header{
     height: 10vh;
 }
 
-.header-logo{
+.header-logo {
     width: 8vh;
     height: 8vh;
     margin-left: 50px;
@@ -37,7 +37,7 @@ header{
     top: 5vh;
 }
 
-.header-buttons{
+.header-buttons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -46,15 +46,15 @@ header{
     width: 35%;
 }
 
-#header-buttons{
+#header-buttons {
     display: flex;
 }
 
-.header-button{
+.header-button {
     display: flex;
     width: 100px;
     height: 40px;
-    background-color: rgba(59,55,54,0.7);
+    background-color: rgba(59, 55, 54, 0.7);
     border-radius: 25px;
     border: 2px solid var(--text-color);
     font-weight: bold;
@@ -66,13 +66,13 @@ header{
 }
 
 /* article */
-#article{
+#article {
     width: 100vw;
     height: calc(100vh - 10vh);
     color: white;
 }
 
-.sign-in-box{
+.sign-in-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,30 +84,31 @@ header{
     backdrop-filter: blur(10px);
 
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
 }
 
-.sign-in-header{
+.sign-in-header {
     font-size: 32px;
     font-weight: 500;
     line-height: 42px;
     text-align: center;
 }
 
-.form{
+.form {
     margin-top: 20px;
 }
-label{
+
+label {
     display: block;
     margin-top: 20px;
     font-size: 16px;
     font-weight: 500;
 }
 
-input{
+input {
     display: block;
     height: 40px;
     width: 100%;
@@ -120,11 +121,11 @@ input{
     color: white;
 }
 
-::placeholder{
+::placeholder {
     color: #e5e5e5;
 }
 
-#submit-button{
+#submit-button {
     margin-top: 30px;
     width: 100%;
     background-color: #ffffff;
@@ -135,12 +136,36 @@ input{
     cursor: pointer;
 }
 
-    /* Footer */
+.sign-up {
+    display: flex;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+}
 
-    .copyright{
-        font-size: 2vh;
-        text-align: center;
-        width: 100%;
-        background-color: #000;
-        color: #fff;
-    }
+#sign-up {
+    display: flex;
+    position: relative;
+    left: 18px;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid var(--text-color);
+    font-weight: bold;
+    margin: 0 1vw;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Footer */
+
+.copyright {
+    font-size: 2vh;
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
